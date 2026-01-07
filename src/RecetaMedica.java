@@ -7,8 +7,8 @@ public class RecetaMedica {
     private Medico medico;
     private List<String> medicamentos;
 
-    public RecetaMedica(LocalDateTime fechaHora, Paciente paciente, Medico medico, List<String> medicamentos) {
-        this.fechaHora = fechaHora;
+    public RecetaMedica(Paciente paciente, Medico medico, List<String> medicamentos) {
+        this.fechaHora = LocalDateTime.now();       
         this.paciente = paciente;
         this.medico = medico;
         this.medicamentos = medicamentos;
