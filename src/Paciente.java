@@ -12,8 +12,15 @@ public class Paciente extends Persona {
         this.recetasMedicas = new ArrayList<>();
     }
 
+    /*
+    añadido - Self Encapsulation
+    */
     public boolean esAdultoMayor() {
-        return super.getEdad() >= 65;
+        return super.getEdad() >= EdadMayor();
+    }
+
+    public int EdadMayor(){
+        return 65;
     }
 
     public List<Consulta> getConsultas() {
